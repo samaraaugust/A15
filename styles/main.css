@@ -1,0 +1,279 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 959px) {
+
+	main section h1 {
+		font-size: 135%;
+	}
+	main section h2 {
+		font-size: 120%;
+	}
+	main aside h2 {
+		font-size: 120%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	* {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#mobile_menu {
+		display: unset;
+		background-color: #800000 !important;
+	}
+	#nav_menu {
+		display: none;
+	}
+	main section{
+		float: unset;
+	}
+
+	main aside{
+		float: unset;
+		padding-right: inherit;
+	}
+
+	header img {
+		float: unset;
+	}
+
+	main aside img {
+		max-width: 30%;
+	}
+
+	header {
+		text-align: center;
+	}
+
+	.speakerPart {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: linear-gradient(30deg,#f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+	padding-right: 3.75%;
+	padding-left: 3.75%;
+}
+
+section {
+	width: 65.625%;
+	float: right;
+	padding-bottom: 20px;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+
+aside {
+	width: 26.875%;
+	float: right;
+	padding-bottom: 20px;
+	padding-left: 2.5%;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+}
+
+main aside img {
+	padding-bottom: 1em;
+}
+
+main section p {
+	padding-bottom: .5em;
+}
+
+main section blockquote {
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+}
+
+main section ul {
+	padding-left: 1.25em;
+	padding-bottom: .25em;
+}
+
+main section li {
+	padding-bottom: .35em;
+}
+
+#nav_menu {
+	background-color: #b8daff;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu li {
+	float: left;
+	width: 20%;
+}
+
+#nav_menu li a{
+	display: block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul {
+	display: none;
+	/*position: absolute;*/
+	padding: 0;
+	left: 0;
+}
+
+#nav_menu li:hover ul{
+	display: block;
+}
+
+#nav_menu li ul{
+	float: none;
+	/*display: block;*/
+	text-decoration: none;
+	background-color: #1e7e34;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.current {
+	color: yellow;
+}
+
+
+main h1 {
+	/*font-size: 150%;*/
+	/*border: 6px solid #931420;*/
+	/*border-radius: 10px;*/
+	/*text-align: center;*/
+	/*border-style: double;*/
+	/*padding-top: 0.3em;*/
+	/*padding-bottom: 0.3em;*/
+	/*background-color: white;*/
+	/*box-shadow: 5px 7px black;*/
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	margin: 0;
+}
+main article{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+
+article img {
+	float: right;
+	margin: 5px;
+	border: 1px solid black;
+	max-width: 40%;
+	min-width: 150px;
+}
+
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+
+main section h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+main aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+main aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+a:hover, a:focus {
+	font-style: italic;
+}
+
+.shadow{
+	text-shadow: 2px 2px #800000;
+}
+/* the styles for the footer */
+footer p {
+	text-align: center;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+footer {
+	border-top: 3px solid #931420;
+	background-color: #931420;
+	border-bottom: 3px solid #931420;
+	clear: right;
+}
+
